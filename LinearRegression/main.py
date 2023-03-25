@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.datasets import make_regression
 from sklearn.model_selection import train_test_split
-from linearRegression import LinearRegression, Test
+from linearRegression import LinearRegression
 def mse(y_true,y_pred):
     return np.mean((y_true-y_pred)**2)
 
