@@ -21,5 +21,6 @@ class KNN:
         euclidean_dist = [self.euclidean_distance(x,x_train) for x_train in self.X_train]
         k_neighbors_indices=np.argsort(euclidean_dist)[:self.k]
         k_neighbors_labels=[self.y_train[i] for i in k_neighbors_indices]
+        print(self.X_train.shape)
         counter = Counter(k_neighbors_labels)
         return counter.most_common()[0][0]
